@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet prefetch"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"
+    />
+    <script src="js/app.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/c8859f7b0c.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Juego de Memoria</title>
+  </head>
+
+  <body>
+    <h1>Juego de Memoria</h1>
+
+    <main>
+      <section>
+        <div class="info-container">
+          <p class="moves">0 Movimiento(s)</p>
+          <p class="timer">0min(s) 0seg(s)</p>
+          <button class="restart-game-button">
+            <i class="fa fa-repeat"></i>
+          </button>
+        </div>
+        <table>
+          <tr>
+            <td><button class="card" id="0"></button></td>
+            <td><button class="card" id="1"></button></td>
+            <td><button class="card" id="2"></button></td>
+            <td><button class="card" id="3"></button></td>
+          </tr>
+          <tr>
+            <td><button class="card" id="4"></button></td>
+            <td><button class="card" id="5"></button></td>
+            <td><button class="card" id="6"></button></td>
+            <td><button class="card" id="7"></button></td>
+          </tr>
+          <tr>
+            <td><button class="card" id="8"></button></td>
+            <td><button class="card" id="9"></button></td>
+            <td><button class="card" id="10"></button></td>
+            <td><button class="card" id="11"></button></td>
+          </tr>
+          <tr>
+            <td><button class="card" id="12"></button></td>
+            <td><button class="card" id="13"></button></td>
+            <td><button class="card" id="14"></button></td>
+            <td><button class="card" id="15"></button></td>
+          </tr>
+        </table>
+      </section>
+    </main>
+
+    <div class="result-container">
+      <p class="finished-message">¡Has finalizado! 🥳</p>
+      <div class="total">
+        <p>Hiciste <span class="total-moves"></span></p>
+        <p>en <span class="total-time"></span></p>
+      </div>
+      <button class="play-again-button">Volver a jugar</button>
+    </div>
+
+    <footer>
+      <p>
+        &copy; Codificado por
+        <a href="https://github.com/facujalil" target="_blank"
+          >Facundo Jalil<i class="fab fa-github-square" aria-hidden="true"></i
+        ></a>
+      </p>
+    </footer>
+  </body>
+</html>

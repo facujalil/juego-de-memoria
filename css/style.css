@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;800&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  font-family: "League Spartan", sans-serif;
+  color: #ffffff;
+  background-color: #f4c531;
+}
+
+h1 {
+  font-size: 2.4em;
+  text-align: center;
+  color: #000000;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+section {
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: 0.3rem;
+  box-shadow: 0px 0px 24px 0 rgb(0, 0, 0, 0.4);
+}
+
+.info-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 0;
+  font-size: 1em;
+  font-weight: 500;
+  color: #000000;
+}
+
+.timer {
+  margin: 0 1.5rem;
+}
+
+.restart-game-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.card {
+  width: 5rem;
+  height: 5rem;
+  margin: 0.5rem;
+  font-size: 2.5em;
+  font-family: "Inter";
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #f4c531;
+  border: 0.2rem solid #000000;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+.result-container {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: auto;
+  text-align: center;
+  color: #000000;
+}
+
+.finished-message {
+  margin-bottom: 1.5rem;
+  font-size: 2.2em;
+  font-weight: bold;
+}
+
+.result-container .total {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 1.5em;
+}
+
+.result-container .play-again-button {
+  margin-top: 1.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.1em;
+  font-family: "League Spartan", sans-serif;
+  color: #ffffff;
+  background-color: #000000;
+  border: none;
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: "Code Saver";
+  src: url("../fonts/Code-Saver-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Code Saver";
+  src: url("../fonts/Code-Saver-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+}
+
+footer p {
+  font-size: 0.875em;
+  font-family: "Code Saver";
+  color: #000000;
+}
+
+footer a {
+  font-weight: 700;
+  text-decoration: none;
+  color: #000000;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer i {
+  margin-left: 0.2rem;
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  html {
+    font-size: 10px;
+  }
+}
