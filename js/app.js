@@ -1,4 +1,4 @@
-let cardList = [
+const cardList = [
   "⚽",
   "⚽",
   "🏈",
@@ -17,19 +17,19 @@ let cardList = [
   "🏊",
 ];
 
-let card = document.querySelectorAll(".card");
+const card = document.querySelectorAll(".card");
 
-let main = document.querySelector("main");
+const main = document.querySelector("main");
 
-let moves = document.querySelector(".moves");
-let timer = document.querySelector(".timer");
+const moves = document.querySelector(".moves");
+const timer = document.querySelector(".timer");
 
-let resultContainer = document.querySelector(".result-container");
-let totalMoves = document.querySelector(".total-moves");
-let totalTime = document.querySelector(".total-time");
+const resultContainer = document.querySelector(".result-container");
+const totalMoves = document.querySelector(".total-moves");
+const totalTime = document.querySelector(".total-time");
 
-let restartGameButton = document.querySelector(".restart-game-button");
-let playAgainButton = document.querySelector(".play-again-button");
+const restartGameButton = document.querySelector(".restart-game-button");
+const playAgainButton = document.querySelector(".play-again-button");
 
 let openedCardCounter = 0;
 let firstOpenedCard;
@@ -52,7 +52,7 @@ cardList.sort(() => {
 
 card.forEach((element) => {
   element.addEventListener("click", () => {
-    let id = element.id;
+    const id = element.id;
     chooseCard(id);
   });
 });
