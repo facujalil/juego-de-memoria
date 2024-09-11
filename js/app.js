@@ -17,7 +17,7 @@ const cardList = [
   "🏊",
 ];
 
-const card = document.querySelectorAll(".card");
+const cards = document.querySelectorAll(".card");
 
 const main = document.querySelector("main");
 
@@ -50,7 +50,7 @@ cardList.sort(() => {
   return Math.random() - 0.5;
 });
 
-card.forEach((element) => {
+cards.forEach((element) => {
   element.addEventListener("click", () => {
     const id = element.id;
     chooseCard(id);
@@ -143,9 +143,9 @@ const restartGame = () => {
 
   moves.textContent = `${moveCounter} Movimiento(s)`;
 
-  for (let i = 0; i < card.length; i++) {
-    card[i].textContent = "";
-    card[i].disabled = false;
+  for (let i = 0; i < cards.length; i++) {
+    cards[i].textContent = "";
+    cards[i].disabled = false;
   }
 
   timer.innerHTML = 0 + "min(s) " + 0 + "seg(s)";
